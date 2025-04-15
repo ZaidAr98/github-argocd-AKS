@@ -23,6 +23,6 @@ jobs:
       uses: docker/build-push-action@v6.15.0
       with:
         context: .
-        file: ./Dockerfile
+        file: ../Dockerfile
         tags: zaid27/myapp1:latest
         push: true
