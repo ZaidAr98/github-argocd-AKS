@@ -7,9 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -19,8 +17,8 @@ jobs:
     - name: Docker Login
       uses: docker/login-action@v3.4.0
       with:
-       username: ${{ secrets.DOCKER_USERNAME }}
-       password: ${{ secrets.DOCKERHUB_TOKEN }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
     
     - name: Build and push Docker images
       uses: docker/build-push-action@v6.15.0
@@ -29,6 +27,3 @@ jobs:
         file: ./dockerfile
         tags: zaid27/myapp1:latest
         push: true
-      
-    
-      
