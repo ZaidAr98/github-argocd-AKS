@@ -24,5 +24,5 @@ jobs:
         with:
           context: .  # Root of the repository
           file: ./Dockerfile  # Path to Dockerfile (must exist!)
-          tags: zaid27/myapp1:latest
+          tags: zaidhamid/myapp1:latest
           push: true
